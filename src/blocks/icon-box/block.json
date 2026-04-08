@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "nova-builder/icon-box",
+  "title": "NB Icon Box",
+  "category": "nova-builder",
+  "description": "Icon + title + description card. Supports top, left, and right icon placement.",
+  "keywords": ["icon", "feature", "box", "card", "nova"],
+  "attributes": {
+    "icon":         { "type": "string", "default": "star-filled" },
+    "iconSize":     { "type": "string", "default": "40px" },
+    "iconColor":    { "type": "string", "default": "#3b82f6" },
+    "iconBg":       { "type": "string", "default": "" },
+    "iconBgSize":   { "type": "string", "default": "80px" },
+    "iconBgRadius": { "type": "string", "default": "50%" },
+    "layout":       { "type": "string", "default": "top" },
+    "title":        { "type": "string", "source": "html", "selector": ".nb-icon-box__title", "default": "Feature Title" },
+    "description":  { "type": "string", "source": "html", "selector": ".nb-icon-box__desc",  "default": "Describe your feature here. Keep it clear and concise." },
+    "titleColor":   { "type": "string", "default": "" },
+    "descColor":    { "type": "string", "default": "" },
+    "textAlign":    { "type": "string", "default": "left" },
+    "padding":      { "type": "object", "default": {} },
+    "boxBg":        { "type": "string", "default": "" },
+    "boxRadius":    { "type": "string", "default": "" },
+    "boxShadow":    { "type": "boolean", "default": false },
+    "className":    { "type": "string", "default": "" }
+  },
+  "supports": { "html": false },
+  "editorScript": "file:../../index.js",
+  "style": "file:../../frontend.css"
+}

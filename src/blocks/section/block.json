@@ -1,0 +1,73 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "nova-builder/section",
+  "title": "NB Section",
+  "category": "nova-builder",
+  "description": "Full-width section container with background, spacing, and layout controls. The building block of every Nova Builder page.",
+  "keywords": ["section", "row", "container", "wrapper", "nova"],
+  "textdomain": "nova-builder",
+  "attributes": {
+    "htmlTag": {
+      "type": "string",
+      "default": "section"
+    },
+    "minHeight": {
+      "type": "string",
+      "default": ""
+    },
+    "contentWidth": {
+      "type": "string",
+      "default": "boxed"
+    },
+    "containerMaxWidth": {
+      "type": "string",
+      "default": "1200px"
+    },
+    "padding": {
+      "type": "object",
+      "default": { "top": "60px", "right": "20px", "bottom": "60px", "left": "20px" }
+    },
+    "margin": {
+      "type": "object",
+      "default": {}
+    },
+    "background": {
+      "type": "object",
+      "default": {}
+    },
+    "overlayColor": {
+      "type": "string",
+      "default": ""
+    },
+    "overlayOpacity": {
+      "type": "number",
+      "default": 0.5
+    },
+    "borderRadius": {
+      "type": "string",
+      "default": ""
+    },
+    "animation": {
+      "type": "string",
+      "default": ""
+    },
+    "anchorId": {
+      "type": "string",
+      "default": ""
+    },
+    "className": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "align": ["full", "wide"],
+    "color": false,
+    "spacing": false
+  },
+  "editorScript": "file:../../index.js",
+  "style": "file:../../frontend.css"
+}

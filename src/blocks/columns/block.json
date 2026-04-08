@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "nova-builder/columns",
+  "title": "NB Columns",
+  "category": "nova-builder",
+  "description": "Multi-column layout with flexible presets, gap control, and responsive stacking.",
+  "keywords": ["columns", "grid", "layout", "row", "nova"],
+  "attributes": {
+    "columnCount": { "type": "number", "default": 2 },
+    "layout": { "type": "string", "default": "equal" },
+    "gap": { "type": "string", "default": "30px" },
+    "verticalAlign": { "type": "string", "default": "top" },
+    "stackOnMobile": { "type": "boolean", "default": true },
+    "reverseOnMobile": { "type": "boolean", "default": false },
+    "className": { "type": "string", "default": "" }
+  },
+  "supports": { "html": false, "align": ["full", "wide"] },
+  "editorScript": "file:../../index.js",
+  "style": "file:../../frontend.css"
+}

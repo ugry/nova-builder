@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "nova-builder/accordion",
+  "title": "NB Accordion",
+  "category": "nova-builder",
+  "description": "FAQ-style accordion with single or multi-expand mode, custom icons, and full style control.",
+  "keywords": ["accordion", "faq", "collapse", "toggle", "nova"],
+  "attributes": {
+    "items": {
+      "type": "array",
+      "default": [
+        { "title": "What is Nova Builder?", "content": "Nova Builder is a Gutenberg-native WordPress page builder with zero shortcode lock-in." },
+        { "title": "Is my content safe?",   "content": "Yes. All content is stored as standard HTML — remove the plugin and your content stays." }
+      ]
+    },
+    "expandMode":    { "type": "string",  "default": "single" },
+    "defaultOpen":   { "type": "number",  "default": 0 },
+    "iconStyle":     { "type": "string",  "default": "plus" },
+    "titleBg":       { "type": "string",  "default": "#f9fafb" },
+    "titleColor":    { "type": "string",  "default": "" },
+    "contentBg":     { "type": "string",  "default": "#ffffff" },
+    "contentColor":  { "type": "string",  "default": "" },
+    "borderColor":   { "type": "string",  "default": "#e5e7eb" },
+    "borderRadius":  { "type": "string",  "default": "8px" },
+    "className":     { "type": "string",  "default": "" }
+  },
+  "supports": { "html": false },
+  "editorScript": "file:../../index.js",
+  "style": "file:../../frontend.css"
+}

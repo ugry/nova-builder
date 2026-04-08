@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "nova-builder/divider",
+  "title": "NB Divider",
+  "category": "nova-builder",
+  "description": "Styled horizontal rule with full control over style, width, color, and thickness.",
+  "attributes": {
+    "style":     { "type": "string", "default": "solid" },
+    "width":     { "type": "string", "default": "100%" },
+    "color":     { "type": "string", "default": "#e5e7eb" },
+    "thickness": { "type": "string", "default": "1px" },
+    "align":     { "type": "string", "default": "center" },
+    "margin":    { "type": "object", "default": { "top": "20px", "bottom": "20px" } }
+  },
+  "supports": { "html": false },
+  "editorScript": "file:../../index.js",
+  "style": "file:../../frontend.css"
+}
