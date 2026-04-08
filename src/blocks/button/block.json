@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "nova-builder/button",
+  "title": "NB Button",
+  "category": "nova-builder",
+  "description": "Highly customizable button with multiple styles, sizes, colors, icon support, and hover effects.",
+  "keywords": ["button", "cta", "link", "nova"],
+  "attributes": {
+    "text":          { "type": "string", "source": "html", "selector": ".nb-btn__text", "default": "Click Here" },
+    "url":           { "type": "string", "default": "" },
+    "target":        { "type": "string", "default": "_self" },
+    "rel":           { "type": "string", "default": "" },
+    "style":         { "type": "string", "default": "filled" },
+    "size":          { "type": "string", "default": "md" },
+    "bgColor":       { "type": "string", "default": "#3b82f6" },
+    "textColor":     { "type": "string", "default": "#ffffff" },
+    "borderColor":   { "type": "string", "default": "#3b82f6" },
+    "borderRadius":  { "type": "string", "default": "6px" },
+    "fullWidth":     { "type": "boolean", "default": false },
+    "icon":          { "type": "string", "default": "" },
+    "iconPosition":  { "type": "string", "default": "right" },
+    "padding":       { "type": "object", "default": {} },
+    "align":         { "type": "string", "default": "left" },
+    "className":     { "type": "string", "default": "" }
+  },
+  "supports": { "html": false },
+  "editorScript": "file:../../index.js",
+  "style": "file:../../frontend.css"
+}

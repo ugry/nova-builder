@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "nova-builder/heading",
+  "title": "NB Heading",
+  "category": "nova-builder",
+  "description": "Heading block with full typography controls — size, weight, transform, spacing, color, and optional decorative underline.",
+  "keywords": ["heading", "title", "h1", "h2", "h3", "text", "nova"],
+  "attributes": {
+    "content":      { "type": "string", "source": "html", "selector": ".nb-heading__text", "default": "" },
+    "level":        { "type": "number", "default": 2 },
+    "textAlign":    { "type": "string", "default": "left" },
+    "color":        { "type": "string", "default": "" },
+    "typography":   { "type": "object", "default": {} },
+    "showDivider":  { "type": "boolean", "default": false },
+    "dividerColor": { "type": "string", "default": "#3b82f6" },
+    "dividerWidth": { "type": "string", "default": "60px" },
+    "padding":      { "type": "object", "default": {} },
+    "margin":       { "type": "object", "default": { "bottom": "16px" } },
+    "className":    { "type": "string", "default": "" }
+  },
+  "supports": { "html": false },
+  "editorScript": "file:../../index.js",
+  "style": "file:../../frontend.css"
+}

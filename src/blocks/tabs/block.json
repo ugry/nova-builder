@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "nova-builder/tabs",
+  "title": "NB Tabs",
+  "category": "nova-builder",
+  "description": "Tabbed content block with customizable tab style and colors.",
+  "keywords": ["tabs", "tabbed", "content", "nova"],
+  "attributes": {
+    "items": {
+      "type": "array",
+      "default": [
+        { "label": "Tab One",   "content": "Content for the first tab." },
+        { "label": "Tab Two",   "content": "Content for the second tab." },
+        { "label": "Tab Three", "content": "Content for the third tab." }
+      ]
+    },
+    "activeTab":    { "type": "number", "default": 0 },
+    "tabStyle":     { "type": "string", "default": "underline" },
+    "activeColor":  { "type": "string", "default": "#3b82f6" },
+    "tabBg":        { "type": "string", "default": "" },
+    "contentBg":    { "type": "string", "default": "#ffffff" },
+    "borderColor":  { "type": "string", "default": "#e5e7eb" },
+    "className":    { "type": "string", "default": "" }
+  },
+  "supports": { "html": false },
+  "editorScript": "file:../../index.js",
+  "style": "file:../../frontend.css"
+}
